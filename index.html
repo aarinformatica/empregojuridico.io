@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Emprego Jurídico</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bem-vindo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="job-header">
+        </header>
+<style>
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header.job-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url('https://raw.githubusercontent.com/aarinformatica/empregojuridico.io/refs/heads/main/header.jpg') no-repeat center top;
+    background-size: cover;
+    height: 200px; /* altura ajustável */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.job-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav {
+    background: #333;
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.fading-effect p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+</style>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Candidato</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <div class="fading-effect">
+                <p id="fading-text">O Conteúdo será disponibilizado em breve... Aguarde por novidades...</p>
+            </div>
+        </section>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
+<!-- partial -->
+<script src="./script.js"></script>
+<scitp>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Certifique-se de que o menu esteja escondido em telas menores
+    if (window.innerWidth <= 768) {
+        document.getElementById('menu').style.display = 'none';
+    }
+});
+</scitp>
+</body>
+</html>
